@@ -27,6 +27,7 @@ urlpatterns = patterns('',
     url(r'^hello/', hello),
 #    url(r'^about/', 'Registry.views.about', name='about'),
     url(r'^about/', about),
+    url(r'^$', about),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(blog_urls, namespace='zinnia')),
 )

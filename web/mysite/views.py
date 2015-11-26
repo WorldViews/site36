@@ -9,4 +9,5 @@ def hello(request):
     return HttpResponse("Hello world")
 
 def about(request):
-    return render_to_response('xabout.html', locals(), RequestContext(request))
+#    return render_to_response('xabout.html', locals(), RequestContext(request))
+    return render_to_response('about.html', locals(), RequestContext(request))
