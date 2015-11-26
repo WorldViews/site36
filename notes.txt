@@ -200,6 +200,9 @@ It appears that the search path for finding css files, and images
 is not under good control at this point.  Perhaps there is a setting
 for it we can change later.
 
+24) Now put on heroku.  That required just a Procfile, edited to
+point to the right location for manage.py.
+
 
 
 
