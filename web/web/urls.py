@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from mysite.views import hello, about
+from mysite.views import hello, about, entry
 
 blog_urls = [
     url(r'^', include('zinnia.urls.capabilities')),
@@ -27,7 +27,7 @@ urlpatterns = patterns('',
     url(r'^hello/', hello),
 #    url(r'^about/', 'Registry.views.about', name='about'),
     url(r'^about/', about),
-    url(r'^$', about),
+    url(r'^$', entry),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(blog_urls, namespace='zinnia')),
 )

@@ -5,6 +5,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+def entry(request):
+#    return HttpResponse("Hello world")
+    return redirect('/blog')
+
 def hello(request):
     return HttpResponse("Hello world")
 
