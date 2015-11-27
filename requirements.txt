@@ -1,4 +1,5 @@
 Django==1.7
+feedparser==5.2.1
 django-blog-zinnia==0.15.2
 django-contrib-comments==1.6.1
 django-mptt==0.7.4

@@ -203,6 +203,28 @@ for it we can change later.
 24) Now put on heroku.  That required just a Procfile, edited to
 point to the right location for manage.py.
 
+--------------------
+
+25) Now I tried running BlogAPI.py script by doing
+
+  > BlogAPI.py
+
+and it gave various errors that indicated it could not load models
+such as zinnia correctly.  After about a half hour of screwing around
+I discovered that instead it is necessary to do
+
+  > python BlogAPI.py
+
+apparently this uses the python with the correct virtual environment
+but directly running BlogAPI.py via the windows mechanism does run
+python with the right enviornment.
+
+Note that if something is wrong with the data that this script tries to
+insert, such as a bad date format, or username that is not in the database
+it may just fail silently, with no helpful diagnostics.  So be careful.
+Make sure the user names that get inserted match a name in the Users
+database.
+
 
 
 
